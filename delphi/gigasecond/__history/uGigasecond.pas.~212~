@@ -1,0 +1,47 @@
+unit uGigasecond;
+
+interface
+uses
+  System.SysUtils, uConvertGigasecond, uDateGigasecond, uTimeGigasecond;
+
+type
+  TGigasecond = class(TObject)
+    class function Add(oldDate: String): String;
+  end;
+
+implementation
+
+{ TGigasecond }
+
+const
+  oneGigasecondInSeconds: Double = 1000000000;
+
+class function TGigasecond.Add(oldDate: String): String;
+var
+  time, newTime, newDate: String;
+  days: Integer;
+  ConvertGigasecond: TConvertGigasecond;
+  TimeGigasecond: TTimeGigasecond;
+  DateGigasecond: TDateGigasecond;
+begin
+  ConvertGigasecond := TConvertGigasecond.Create;
+  TimeGigasecond := TTimeGigasecond.Create;
+  DateGigasecond := TDateGigasecond.Create;
+
+  try
+    ConvertGigasecond.GetTimeAndDays(oneGigasecondInSeconds, time, days);
+
+    TimeGigasecond.GetTime(oldDate, newTime, hours, minutes, seconds, days);
+
+    DateGigasecond.GetDate(oldDate, newDate, days);
+
+    Result := newDate + 'T' + newTime;
+
+  finally
+    FreeAndNil(ConvertGigasecond);
+    FreeAndNil(TimeGigasecond);
+    FreeAndNil(DateGigasecond);
+  end;
+end;
+
+end.

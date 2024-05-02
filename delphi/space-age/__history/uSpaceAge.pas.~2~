@@ -1,0 +1,13 @@
+unit uSpaceAge;
+
+Interface
+
+type
+  TSpaceAge = class(TObject)
+    public
+  end;
+
+implementation
+
+
+end.

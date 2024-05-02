@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/04/16 17:25:47.000.794,=C:\Users\janair.correia\Exercism\delphi\gigasecond\Unit1.pas</Transaction>
+    <Transaction>2024/04/16 17:26:18.000.595,C:\Users\janair.correia\Exercism\delphi\gigasecond\uTimeGigasecond.pas=C:\Users\janair.correia\Exercism\delphi\gigasecond\Unit1.pas</Transaction>
+    <Transaction>2024/04/16 17:26:28.000.951,=C:\Users\janair.correia\Exercism\delphi\gigasecond\Unit1.pas</Transaction>
+    <Transaction>2024/04/16 17:26:43.000.709,C:\Users\janair.correia\Exercism\delphi\gigasecond\uDateGigasecond.pas=C:\Users\janair.correia\Exercism\delphi\gigasecond\Unit1.pas</Transaction>
+    <Transaction>2024/04/17 20:00:18.000.279,C:\Users\janair.correia\Exercism\delphi\gigasecond\uTimeGigasecond.pas=C:\Users\janair.correia\Exercism\delphi\gigasecond\uConvertGigasecond.pas</Transaction>
+    <Transaction>2024/04/17 20:20:02.000.314,=C:\Users\janair.correia\Exercism\delphi\gigasecond\Unit1.pas</Transaction>
+    <Transaction>2024/04/17 20:20:26.000.641,C:\Users\janair.correia\Exercism\delphi\gigasecond\uTimeGigasecond.pas=C:\Users\janair.correia\Exercism\delphi\gigasecond\Unit1.pas</Transaction>
+    <Transaction>2024/04/23 21:55:48.000.070,=C:\Users\janair.correia\Exercism\delphi\gigasecond\Unit1.pas</Transaction>
+    <Transaction>2024/04/23 21:56:16.000.416,C:\Users\janair.correia\Exercism\delphi\gigasecond\uCommonDateTime.pas=C:\Users\janair.correia\Exercism\delphi\gigasecond\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

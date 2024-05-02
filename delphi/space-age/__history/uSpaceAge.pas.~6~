@@ -1,0 +1,15 @@
+unit uSpaceAge;
+
+Interface
+
+type
+  ISpaceAge = class(TObject)
+    public
+    private
+      function OnEarth: Double;
+  end;
+
+implementation
+
+
+end.

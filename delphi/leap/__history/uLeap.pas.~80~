@@ -1,0 +1,30 @@
+unit uLeap;
+
+interface
+
+type
+  TYear = class
+
+  public
+    class function IsLeap(year: Integer): Boolean;
+    class function divisibleBy(year, divider: integer): Boolean;
+  end;
+
+implementation
+
+{ TYear }
+
+class function TYear.IsLeap(year: Integer): Boolean;
+begin
+  Result :=
+    divisibleBy(year, 400) or
+    divisibleBy(year, 4) and
+    not divisibleBy(year, 100);
+end;
+
+class function TYear.divisibleBy(year, divider: Integer): Boolean;
+begin
+  Result := year mod divider = 0;
+end;
+
+end.

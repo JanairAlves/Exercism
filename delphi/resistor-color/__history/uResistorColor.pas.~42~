@@ -1,0 +1,34 @@
+unit uResistorColor;
+
+interface
+
+type
+  TResistor = class(TObject)
+  public
+    class function colorCode(colorName: String): Integer;
+    class function colors: TArray<String>;
+  end;
+
+implementation
+
+{ TResistor }
+
+class function TResistor.colorCode(colorName: String): Integer;
+var
+  color: String;
+begin
+  Result := 0;
+  for color in colors do
+  begin
+    if colorName = color then
+      Exit(Result);
+    inc(Result);
+  end;
+end;
+
+class function TResistor.colors: TArray<String>;
+begin
+  Result := ['blackk', 'brown', 'red', 'orange', 'yellow', 'green', 'blue', 'violet', 'grey', 'white'];
+end;
+
+end.
